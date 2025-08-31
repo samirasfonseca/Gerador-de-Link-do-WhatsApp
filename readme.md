@@ -56,7 +56,7 @@ Funcionalidades principais:
 ## 🚀 Como Usar
 
 1. Clone o repositório:  
-```bash
+
 git clone https://github.com/seu-usuario/projeto-whatsapp-link.git
 
 2. Abra index.html no seu navegador.
