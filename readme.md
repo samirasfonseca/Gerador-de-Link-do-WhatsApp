@@ -32,7 +32,8 @@ Funcionalidades principais:
 
 ## Demonstração online
 
-![Github Pages](https://samirasfonseca.github.io/Gerador-de-Link-do-WhatsApp/)
+[Visite o projeto no GitHub Pages](https://samirasfonseca.github.io/Gerador-de-Link-do-WhatsApp/)
+
 
 
 ---
