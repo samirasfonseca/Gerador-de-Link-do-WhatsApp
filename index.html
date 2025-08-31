@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <title>Gerador de Links do WhatsAp</title>
+</head>
+<body>
+
+     <header>
+        <nav>
+        <h1>Gerador de Links do WhatsAp <i class="fa-brands fa-whatsapp"></i>
+</h1>
+        </nav>
+    </header>
+
+    <main>
+      <section class="card" role="form" aria-label="Gerador de Link do WhatsApp">
+
+      <div class="card__body">
+        <div class="grid">
+          <div class="row">
+            <label for="country">País</label>
+            <div class="control">
+              <select id="country">
+                <option value="55" selected>BR +55</option>
+                <option value="351">PT +351</option>
+                <option value="1">US +1</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="phone">Número (com DDD)</label>
+            <div class="control">
+              <input id="phone" type="tel" placeholder="Ex.: (11) 9 9876-5432">
+            </div>
+            <span id="errPhone" class="error">Número inválido.</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="btnGenerate" class="btn">Gerar link</button>
+          <button id="btnOpen" class="btn secondary" disabled>Abrir no WhatsApp</button>
+          <button id="btnCopy" class="btn secondary" disabled>Copiar link</button>
+          <span id="copyOk" class="ok">✔ Link copiado!</span>
+        </div>
+
+        <div class="preview" aria-live="polite">
+          <strong>Preview:</strong>
+          <code id="linkPreview">—</code>
+        </div>
+      </div>
+
+      <div class="qr-section">
+      <div class="qrcode__container1">
+        <h3>QR Code</h3>
+        
+        <button id="btnDownloadQR" class="btn secondary" disabled>Baixar QR Code</button>
+        </div>
+
+        <div id="qrcode__container2">
+          <div id="qrcode"></div>
+        </div>
+      </div>
+
+      </section>
+  </main>
+
+         <footer class="Rodape">
+                
+        <div>
+            <a href="https://github.com/samirasfonseca"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/samirasfonseca"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="http://t.me/samirasfonseca"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+
+            <p>Feito com<i class="fa-solid fa-heart"></i>por Samira</p>
+    </footer>
+<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</body>
+</html>

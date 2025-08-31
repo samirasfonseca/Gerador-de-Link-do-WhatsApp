@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem ;
+  color: #aad576;
+  border-bottom: 2px solid #00ff99;
+  font-size: 0.7rem;
+  width: 100vw;
+  max-width: 100%;
+}
